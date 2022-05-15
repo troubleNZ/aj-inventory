@@ -26,8 +26,12 @@
 - [qb-drugs](https://github.com/qbcore-framework/qb-drugs) -  Drugs and weeds system
 - [qb-shops](https://github.com/qbcore-framework/qb-shops) - Needed in order to add shops
 
+## Trbl .CSS Update:
+Thanks for checking this out. 
+We used this edited version of aj-inventory on our public server and now its available for you to try out yourself.
+
 ## Screenshots
-![General](https://media.discordapp.net/attachments/872212223509016576/915099845381988412/unknown.png?width=1246&height=701)
+![General](https://i.imgur.com/T6uyXd8.png?width=840&height=397)
 
 ## Features
 - Progress Bars to show Weight
@@ -47,3 +51,4 @@
 
 ## Credits
 Im not the best when it comes to CSS so some code was used from [LJ-Inventory](https://github.com/loljoshie/lj-inventory) by [loljoshie](https://github.com/loljoshie) ❤️
+

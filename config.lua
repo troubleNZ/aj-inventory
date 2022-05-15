@@ -1,5 +1,30 @@
 Config = {}
 
+local StringCharset = {}
+local NumberCharset = {}
+
+for i = 48,  57 do table.insert(NumberCharset, string.char(i)) end
+for i = 65,  90 do table.insert(StringCharset, string.char(i)) end
+for i = 97, 122 do table.insert(StringCharset, string.char(i)) end
+
+Config.RandomStr = function(length)
+	if length > 0 then
+		return Config.RandomStr(length-1) .. StringCharset[math.random(1, #StringCharset)]
+	else
+		return ''
+	end
+end
+
+Config.RandomInt = function(length)
+	if length > 0 then
+		return Config.RandomInt(length-1) .. NumberCharset[math.random(1, #NumberCharset)]
+	else
+		return ''
+	end
+end
+
+Config.NormalIDCard = false -- Make this false if you use the "qb-idcard" script -- https://github.com/alp1x/qb-idcard
+
 Config.VendingObjects = {
     "prop_vend_soda_01",
     "prop_vend_soda_02",
@@ -21,6 +46,25 @@ Config.VendingItem = {
     },
     [2] = {
         name = "water_bottle",
+        price = 4,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 2,
+    },
+}
+
+Config.VendingItemDono = {
+    [1] = {
+        name = "wine",
+        price = 4,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    },
+    [2] = {
+        name = "patochebeer",
         price = 4,
         amount = 50,
         info = {},

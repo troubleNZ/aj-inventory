@@ -1,15 +1,19 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'QB-Inventory'
-version '1.0.0'
+description 'aj-inventory'
+version 'v2.2.3'
 
-shared_scripts {
+shared_scripts { 
 	'config.lua',
+	----'@qb-core/import.lua',
 	'@qb-weapons/config.lua'
 }
 
-server_script 'server/main.lua'
+server_scripts {
+	'server/main.lua',
+	'server/version.lua',
+}
 client_script 'client/main.lua'
 
 ui_page {
@@ -24,9 +28,9 @@ files {
 	'html/images/*.jpg',
 	'html/ammo_images/*.png',
 	'html/attachment_images/*.png',
-	'html/*.ttf'
+	'html/*.ttf',
 }
 
-dependency 'qb-weapons'
+provide 'qb-inventory'
 
-lua54 'yes'
+ui_label 'Inventory'
