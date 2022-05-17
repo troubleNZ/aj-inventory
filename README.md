@@ -1,5 +1,14 @@
 # aj-inventory. A NoPixel 3.0 Inspired Inventory. 
 
+## Trbl .CSS Update:
+Thanks for checking this edit out. 
+We used this modified version of aj-inventory on our public server and now its available for you to try out yourself.
+This is mostly the same as AJays December update with some additional code from snippets from the qbcore discord, 
+like extra items with default uses (cigarette box) etc.
+
+## Screenshots
+![General](https://i.imgur.com/T6uyXd8.png?width=840&height=397)
+
 # License
 
     QBCore Framework
@@ -26,16 +35,12 @@
 - [qb-drugs](https://github.com/qbcore-framework/qb-drugs) -  Drugs and weeds system
 - [qb-shops](https://github.com/qbcore-framework/qb-shops) - Needed in order to add shops
 
-## Trbl .CSS Update:
-Thanks for checking this out. 
-We used this edited version of aj-inventory on our public server and now its available for you to try out yourself.
-
-## Screenshots
-![General](https://i.imgur.com/T6uyXd8.png?width=840&height=397)
+- [oxmysql](https://github.com/overextended/oxmysql/releases/latest) - *** uses the v2.0 OX method MySQL.Async ***
 
 ## Features
 - Progress Bars to show Weight
-- NoPixel 3.0 Style / Color
+- ~~NoPixel 3.0 Style / Color~~ Tilted perspective, slate grey background, brighter colours.
+- the toggle hotbar (z) ive hidden the displayed images and made it text only - easy to enable images if wanted.
 - Item crafting
 - Weapon attachment crafting
 - Stashes (Personal and/or Shared)
